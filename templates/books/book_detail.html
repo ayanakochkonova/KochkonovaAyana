@@ -1,0 +1,18 @@
+
+
+{% include 'header_and_footer/header.html' %}
+<center>
+<div class="card" style="width: 18rem;">
+  <img src="{{book_id.image.url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">{{book_id.title}}</p>
+    <p class="card-text">{{book_id.country}}</p>
+    <p class="card-text">{{book_id.genre}}</p>
+    <p class="card-text">{{book_id.director}}</p>
+    <p class="card-text">{{book_id.description}}</p>
+    <p class="card-text">{{book_id.created_at}}</p>
+  </div>
+</div>
+</center>
+
+{% include 'header_and_footer/footer.html' %}
